@@ -28,7 +28,7 @@ public class MyUnitTests {
     public void test() {
         // GIVEN
         Product product =new Product(null, 15, 0, "NORMAL", "RJ45 Cable", null, null, null);
-
+        System.out.println("=================");
         Mockito.when(productRepository.save(product)).thenReturn(product);
 
         // WHEN
